@@ -1,73 +1,59 @@
-# React + TypeScript + Vite
+# Patient Appointment Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive frontend web application developed as part of a two-person Senior Project for managing patient appointments and medical records.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project provides the frontend interface for a patient appointment and medical record management system. It focuses on delivering an intuitive user experience for patients and healthcare staff.
 
-## React Compiler
+> **Note**
+>
+> This repository contains **only the frontend source code**. The backend source code is not included because it was developed collaboratively by another team member.
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+## My Responsibilities
 
-## Expanding the ESLint configuration
+- Developed the frontend application using React.js.
+- Designed and implemented responsive user interfaces.
+- Integrated frontend components with backend REST APIs.
+- Assisted in debugging backend issues and resolving integration problems.
+- Participated in deployment using Render.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Features
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- User authentication interface
+- Patient appointment scheduling
+- Patient information management
+- Medical record interface
+- Responsive design
+- REST API integration
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Tech Stack
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Frontend
+
+- React.js
+- JavaScript
+- HTML5
+- CSS3
+
+### API
+
+- REST API
+
+## Getting Started
+
+```bash
+git clone https://github.com/ioosck1/patient-appointment-frontend.git
+
+cd patient-appointment-frontend
+
+npm install
+
+npm start
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Team
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+This project was developed by a **two-person team**.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+My primary responsibility was developing the frontend using React.js. I also assisted with backend debugging and API integration during development.
